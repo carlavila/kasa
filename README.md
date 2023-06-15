@@ -1,4 +1,4 @@
-# P11-Kasa
+# Kasa
 
 # Projet n°11 - Développeur Applications Javascript React
 
@@ -20,7 +20,6 @@ défaut.
 
 Utilisation de `Figma` pour la maquette.<br>
 Utilisation de `React` pour le développement et de `Saas` pour le style.<br>
-Utilisation de `GitHub` pour le versionning et `Vercel` pour le déploiement.<br>
 
 ## Installation
 
