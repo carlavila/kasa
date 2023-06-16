@@ -1,0 +1,58 @@
+.about-banner {
+	width: 100%;
+	height: 223px;
+	margin: 24px 0 0;
+	overflow: hidden;
+	border-radius: 10px;
+	background-image: url(../assets/img1.png);
+	background-repeat: none;
+	background-size: cover;
+	background-position: center center;
+	filter: brightness(.9);
+    }
+    
+    .homeBanner {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 111px;
+	margin-bottom: 22px;
+	background-image: url(../assets/img2.png);
+	background-repeat: none;
+	background-size: 190%;
+	background-position: 48% -65%;
+	overflow: hidden;
+	border-radius: 10px;
+	transition: .5s ease;
+    
+	.bannerTitle {
+	    display: flex;
+	    align-items: center;
+	    width: 100%;
+	    height: 100%;
+	    padding-left: 16px;
+	    padding-right: 30%;
+	    font-size: clamp(1.5rem, 0.8497rem + 2.7746vw, 3rem);
+	    font-weight: 500;
+	    color: white;
+	    backdrop-filter: brightness(.7);
+	}
+    }
+    
+    @media screen and (min-width: 700px) {
+	.homeBanner {
+	    height: 223px;
+	    margin: 43px 0 43px;
+	    background-size: cover;
+	    background-position: center;
+	    border-radius: 25px;
+	
+	    .bannerTitle {
+		justify-content: center;
+		padding: 0;
+	    }
+	}
+	.about-banner {
+		border-radius: 25px;
+	    }
+    }

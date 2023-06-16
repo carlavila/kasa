@@ -1,0 +1,20 @@
+
+@import "../components/navbar.scss";
+@import "../components/cards.scss";
+@import "../pages/home.scss";
+@import "../components/banner.scss";
+@import "../components/footer";
+
+body {
+	margin: 40px;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+	  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+	  sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+      }
+      
+      code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+	  monospace;
+      }
