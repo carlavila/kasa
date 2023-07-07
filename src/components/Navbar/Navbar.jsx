@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/logo.png";
+import logo from "../../assets/logo.png";
 import { Link } from "react-router-dom";
 
 function Navbar() {
@@ -19,16 +19,15 @@ function Navbar() {
   return (
     <nav className="navbar_header">
       <img src={logo} alt="logo" className="img_logo"></img>
-        <ul className="ul_links">
-          {LinkNavigation.map((item, index) => {
-            return (
-              <li key={index} className={item.cName}>
-		{/*<a href={item.path}>{item.title}</a>*/}
-                <Link to={item.path}>{item.title}</Link>
-              </li>
-            );
-          })}
-        </ul>
+      <ul className="ul_links">
+        {LinkNavigation.map((item, index) => {
+          return (
+            <li key={index} className={item.cName}>
+              <Link to={item.path}>{item.title}</Link>
+            </li>
+          );
+        })}
+      </ul>
     </nav>
   );
 }

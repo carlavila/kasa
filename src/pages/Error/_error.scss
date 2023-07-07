@@ -1,0 +1,39 @@
+.notfound-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-self: center;
+	width: 100%;
+	height: 100%;
+	flex-grow: 1;
+	color: #FF6060;
+    
+	.error-number {
+	    font-size: 260px;
+	    font-weight: 700;
+	}
+    
+	.error-message {
+	    width: 80%;
+	    text-align: center;
+	    font-size: 36px;
+	    font-weight: 500;
+	    line-height: 142.6%;
+	}
+    
+	.error-link {
+	    margin-top: 2em;
+	    font-weight: 500;
+	    color: #FF6060;
+    
+	    .error {
+		border-bottom: 1px solid white;
+		transition: .2s ease;
+		font-size: 18px;
+		&:hover {
+		    border-bottom: 1px solid #FF6060;
+		}
+	    }
+	}
+    }

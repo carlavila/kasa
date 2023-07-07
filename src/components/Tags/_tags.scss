@@ -1,0 +1,29 @@
+.housing-tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	margin-top:1.5em;
+    }
+    
+    .tag {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: fit-content;
+	height: auto;
+	padding: 5px 15px;
+	border-radius: 25px;
+	background-color: #FF6060;
+	transition: .5s;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	
+	span {
+	    font-size: clamp(0.625rem, 0.4803rem + 0.6173vw, 0.875rem);
+	    font-weight: 500;
+	    line-height: 142.6%;
+	    color: white;
+	}
+    }
+    
+ 

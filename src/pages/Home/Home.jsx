@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
-import Navbar from "../components/Navbar";
-import { Card } from "../components/Card";
-import Banner from "../components/Banner";
-import Footer from "../components/Footer";
-import logements from "../datas/logements.json";
+import Navbar from "../../components/Navbar/Navbar";
+import { Card } from "../../components/Card/Card";
+import Banner from "../../components/Banner/Banner";
+import logements from "../../datas/logements.json";
 
 export default function Home() {
   const [housing, setHousing] = useState(logements);
@@ -23,7 +22,6 @@ export default function Home() {
           ))}
         </div>
       </div>
-      <Footer />
     </section>
   );
 }

@@ -1,0 +1,108 @@
+.dropdown-info {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .dropdown-wrapper {
+        max-width: 1020px;
+        margin:0 auto;
+
+        .dropdown {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .dropdown-content {
+            .content {
+                color: #FF6060;
+                font-family: "Montserrat", sans-serif;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 20px;
+            }
+        }
+    }
+}
+
+.dropdown-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 582px;
+    width: 100%;
+    height: max-content;
+    border-radius: 5px;
+    background-color: #F6F6F6;
+
+    @media screen and (min-width: 700px) {
+        border-radius: 10px;
+    }
+
+    .dropdown {
+        display: flex;
+        align-items: center;
+        height: auto;
+        font-family: 'Montserrat', sans-serif;
+        padding: 20px;
+        border-radius: 5px;
+        background-color: #FF6060;
+        font-size: 16px;
+        font-weight: 400;
+        color: white;
+        text-transform: capitalize;
+
+        @media screen and (min-width: 700px) {
+            border-radius: 10px;
+        }
+    }
+
+    button {
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        right: 10px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        @media screen and (min-width: 700px) {
+            width: 32px;
+            height: 32px;
+        }
+    }
+
+    .caret {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+ 
+    .caret-open {
+        transform: rotate(180deg);
+    }
+
+    .caret-close {
+        transform: rotate(0deg);
+    }
+
+    .dropdown-content {
+        height: 0px;
+        overflow: hidden;
+        transition: height ease .35s;
+
+        .content {
+            padding: 20px 10px 10px;
+            color: #FF6060;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+            font-weight:300;
+            line-height: 20px;
+
+            @media screen and (min-width: 700px) {
+                padding: 20px;
+            }
+        }
+    }
+
+}
