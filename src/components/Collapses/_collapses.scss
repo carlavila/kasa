@@ -39,6 +39,10 @@
     @media screen and (min-width: 700px) {
         border-radius: 10px;
     }
+    @media screen and (max-width: 1270px) {
+        max-width: 100%;
+    }
+
 
     .dropdown {
         display: flex;
@@ -56,12 +60,16 @@
         @media screen and (min-width: 700px) {
             border-radius: 10px;
         }
+        @media screen and (max-width: 700px) {
+            font-size: 14px;
+          }
+          @media screen and (max-width: 400px) {
+            font-size: 13px;
+          }
     }
 
     button {
         position: absolute;
-        width: 15px;
-        height: 15px;
         right: 10px;
         background: none;
         border: none;
@@ -92,7 +100,7 @@
         transition: height ease .35s;
 
         .content {
-            padding: 20px 10px 10px;
+            padding: 10px 20px 20px 20px;
             color: #FF6060;
             font-family: 'Montserrat', sans-serif;
             font-size: 14px;
@@ -102,6 +110,10 @@
             @media screen and (min-width: 700px) {
                 padding: 20px;
             }
+
+            @media screen and (max-width: 400px) {
+                font-size: 12px;
+              }
         }
     }
 
