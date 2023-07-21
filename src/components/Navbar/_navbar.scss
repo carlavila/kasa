@@ -17,6 +17,9 @@ $primary: #ff6060;
   }
   .link {
     list-style: none;
+        &:active {
+      text-decoration: underline;
+    }
   }
   a {
     text-decoration: none;
@@ -24,11 +27,13 @@ $primary: #ff6060;
     font-family: "Montserrat", sans-serif;
     color: $primary;
     &:hover,
-    &:focus,
-    &:visited,
     &:active {
       text-decoration: underline;
     }
+    &.active {
+      text-decoration: underline;
+    }
+    
   }
 }
 

@@ -4,7 +4,7 @@ import caret from "../../assets/caret.svg";
 const Dropdown = ({ title, children }) => {
   const [show, setShow] = useState(false);
 
-  const parentRef = useRef();
+  const parentRef = useRef(); //accéder aux éléments du DOM
 
   return (
     <div className="dropdown-wrapper">

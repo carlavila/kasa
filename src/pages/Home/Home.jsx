@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import { Card } from "../../components/Card/Card";
-import Banner from "../../components/Banner/Banner";
 import logements from "../../datas/logements.json";
+import Banner from "../../components/Banner/Banner"
 
 export default function Home() {
   const [housing, setHousing] = useState(logements);
@@ -14,7 +14,8 @@ export default function Home() {
   return (
     <section className="home-container">
       <Navbar />
-      <Banner />
+     {/* <Banner />*/} 
+     <Banner page="home" />
       <div className="gallery-layout">
         <div className="gallery">
           {housing.map((house) => (

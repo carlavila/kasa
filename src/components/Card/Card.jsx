@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export function Card(props) {
+export function Card(props) { //objet
   return (
     <div className="card-container">
       <Link

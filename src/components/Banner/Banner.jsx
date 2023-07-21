@@ -1,9 +1,11 @@
-function Banner() {
-  return (
-    <div className="homeBanner">
-      <h1 className="bannerTitle">Chez vous, partout et ailleurs</h1>
-    </div>
-  );
-}
-
-export default Banner;
+function Banner({ page }) {
+	return (
+	  <div className={page === 'home' ? 'homeBanner' : 'about-banner'}>
+	    {page === 'home' ? (
+	      <h1 className="bannerTitle">Chez vous, partout et ailleurs</h1>
+	    ) : null}
+	  </div>
+	);
+      }
+      export default Banner;
+      

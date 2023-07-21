@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../../components/Navbar/Navbar";
-import AboutBanner from "../../components/Banner/AboutBanner";
 import Collapses from "../../components/Collapses/Collapses";
+import Banner from "../../components/Banner/Banner";
 
 const About = () => {
   const fiability =
@@ -17,7 +17,7 @@ const About = () => {
     <>
     <div className="about">
       <Navbar />
-      <AboutBanner />
+      <Banner page="about" />
       <div className="dropdown-info">
         <Collapses title="Fiabilité" className="">{fiability}</Collapses>
         <Collapses title="Respect">{respect}</Collapses>
