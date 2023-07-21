@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../../assets/logo.png";
-import { Link, useLocation } from 'react-router-dom'; // Make sure to import useLocation from react-router-dom
+import { Link, useLocation } from 'react-router-dom';
 
 function Navbar() {
   const LinkNavigation = [
@@ -16,7 +16,6 @@ function Navbar() {
     },
   ];
 
-  // Get the current location using useLocation()
   const currentLocation = useLocation().pathname;
 
   return (
@@ -24,7 +23,6 @@ function Navbar() {
       <img src={logo} alt="logo" className="img_logo"></img>
       <ul className="ul_links">
         {LinkNavigation.map((item, index) => {
-          // Check if the current path matches the link's path
           const isActive = currentLocation === item.path;
 
           return (
